@@ -17,8 +17,7 @@ export const Novels = () => {
 		refetchQueries: [{ query: GET_NOVELS }],
 	});
 
-	//const novels: INovel[] = data?.novels;
-    const novels: Novel[] = data?.novels;
+	const novels: INovel[] = data?.novels;
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
